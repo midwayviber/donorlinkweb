@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Hospitals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+
+<body>
+
+    <header id="home">
+        <div class="logo">
+            <h1>Donor <span class="black-letter">L</span>ink</h1>
+        </div>
+        <div class="nav-links">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../donor dashboard/index.html">Find Donors</a></li>
+                    <li><a href="../hospitals/index.html">Hospitals</a></li>
+                    <li><a href="../connect/index.html">Lives Saved</a></li>
+                    <li><a href="#" onclick="window.alert(' Profile Coming Soon!')">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Our Partner Hospitals</h1>
+
+        <!-- Search Bar -->
+        <input type="text" id="searchBar" placeholder="Search Hospitals by Name" onkeyup="searchHospitals()" />
+
+        <div class="hospital-list" id="hospitalList">
+            <div class="hospital-card" onclick="showPopup('hospital1')">
+                <img src="images/hospital1.jpg" alt="Hospital 1">
+                <h2>City Hospital</h2>
+                <p>Lives Saved: 1500+</p>
+            </div>
+            <div class="hospital-card" onclick="showPopup('hospital2')">
+                <img src="images/hospital2.jpeg" alt="Hospital 2">
+                <h2>General Hospital</h2>
+                <p>Lives Saved: 1200+</p>
+            </div>
+            <div class="hospital-card" onclick="showPopup('hospital3')">
+                <img src="images/hospital3.webp" alt="Hospital 3">
+                <h2>St. Mary’s Hospital</h2>
+                <p>Lives Saved: 1300+</p>
+            </div>
+            <div class="hospital-card" onclick="showPopup('hospital4')">
+                <img src="images/hospital4.jpeg" alt="Hospital 4">
+                <h2>Green Valley Hospital</h2>
+                <p>Lives Saved: 1000+</p>
+            </div>
+            <div class="hospital-card" onclick="showPopup('hospital5')">
+                <img src="images/hospital5.jpg" alt="Hospital 5">
+                <h2>Sunshine Hospital</h2>
+                <p>Lives Saved: 1100+</p>
+            </div>
+            <div class="hospital-card" onclick="showPopup('hospital6')">
+                <img src="images/hospital6.jpeg" alt="Hospital 6">
+                <h2>Health First Clinic</h2>
+                <p>Lives Saved: 800+</p>
+            </div>
+            <div class="hospital-card" onclick="showPopup('hospital7')">
+                <img src="images/hospital7.jpeg" alt="Hospital 7">
+                <h2>Hope Care Hospital</h2>
+                <p>Lives Saved: 950+</p>
+            </div>
+            <div class="hospital-card" onclick="showPopup('hospital8')">
+                <img src="images/hospital8.jpeg" alt="Hospital 8">
+                <h2>Westfield Medical Center</h2>
+                <p>Lives Saved: 1400+</p>
+            </div>
+        </div>
+
+    <!-- Blood Donation Camp Slider Section -->
+    <div class="donation-camp-slider">
+        <h1> Blood Donation Camps</h1>
+        <div class="slick-slider">
+            <div><img src="images/camp1.jpeg" alt="Blood Donation Camp 1"></div>
+            <div><img src="images/camp2.jpeg" alt="Blood Donation Camp 2"></div>
+            <div><img src="images/camp3.jpeg" alt="Blood Donation Camp 3"></div>
+            <div><img src="images/camp4.jpeg" alt="Blood Donation Camp 4"></div>
+            <div><img src="images/camp5.jpg" alt="Blood Donation Camp 5"></div>
+            <div><img src="images/camp6.jpeg" alt="Blood Donation Camp 6"></div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <!-- Popup for City Hospital -->
+<div class="popup" id="hospital1">
+    <div class="popup-content">
+        <div class="popup-left">
+            <h2>City Hospital</h2>
+            <p>Partnered Since: 2019</p>
+            <p>Success Rate: 95%</p>
+            <p>Total Donations: 2000+</p>
+            <p>Lives Saved: 1500+</p>
+            <p>Contact Hours: 24/7</p>
+            <button class="contact-btn" onclick="contactHospital()">Contact Hospital</button>
+        </div>
+        <div class="popup-right">
+            <img src="images/hospital1.jpg" alt="City Hospital">
+            <h3>Supporters</h3>
+            <div class="supporters">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 1">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 2">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 3">
+            </div>
+            <h3>Beneficiaries</h3>
+            <div class="beneficiaries">
+                <img src="../donor dashboard/images/2.jpg" alt="Beneficiary 1">
+                <img src="../donor dashboard/images/13.jpg" alt="Beneficiary 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup for General Hospital -->
+<div class="popup" id="hospital2">
+    <div class="popup-content">
+        <div class="popup-left">
+            <h2>General Hospital</h2>
+            <p>Partnered Since: 2020</p>
+            <p>Success Rate: 90%</p>
+            <p>Total Donations: 1500+</p>
+            <p>Lives Saved: 1200+</p>
+            <p>Contact Hours: 9am - 6pm</p>
+            <button class="contact-btn" onclick="contactHospital()">Contact Hospital</button>
+        </div>
+        <div class="popup-right">
+            <img src="images/hospital2.jpeg" alt="General Hospital">
+            <h3>Supporters</h3>
+            <div class="supporters">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 1">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 2">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 3">
+            </div>
+            <h3>Beneficiaries</h3>
+            <div class="beneficiaries">
+                <img src="../donor dashboard/images/2.jpg" alt="Beneficiary 1">
+                <img src="../donor dashboard/images/13.jpg" alt="Beneficiary 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup for St. Mary’s Hospital -->
+<div class="popup" id="hospital3">
+    <div class="popup-content">
+        <div class="popup-left">
+            <h2>St. Mary’s Hospital</h2>
+            <p>Partnered Since: 2018</p>
+            <p>Success Rate: 92%</p>
+            <p>Total Donations: 1700+</p>
+            <p>Lives Saved: 1300+</p>
+            <p>Contact Hours: 24/7</p>
+            <button class="contact-btn" onclick="contactHospital()">Contact Hospital</button>
+        </div>
+        <div class="popup-right">
+            <img src="images/hospital3.webp" alt="St. Mary’s Hospital">
+            <h3>Supporters</h3>
+            <div class="supporters">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 1">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 2">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 3">
+            </div>
+            <h3>Beneficiaries</h3>
+            <div class="beneficiaries">
+                <img src="../donor dashboard/images/2.jpg" alt="Beneficiary 1">
+                <img src="../donor dashboard/images/13.jpg" alt="Beneficiary 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup for Green Valley Hospital -->
+<div class="popup" id="hospital4">
+    <div class="popup-content">
+        <div class="popup-left">
+            <h2>Green Valley Hospital</h2>
+            <p>Partnered Since: 2021</p>
+            <p>Success Rate: 88%</p>
+            <p>Total Donations: 1400+</p>
+            <p>Lives Saved: 1000+</p>
+            <p>Contact Hours: 7am - 10pm</p>
+            <button class="contact-btn" onclick="contactHospital()">Contact Hospital</button>
+        </div>
+        <div class="popup-right">
+            <img src="images/hospital4.jpeg" alt="Green Valley Hospital">
+            <h3>Supporters</h3>
+            <div class="supporters">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 1">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 2">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 3">
+            </div>
+            <h3>Beneficiaries</h3>
+            <div class="beneficiaries">
+                <img src="../donor dashboard/images/2.jpg" alt="Beneficiary 1">
+                <img src="../donor dashboard/images/13.jpg" alt="Beneficiary 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup for Sunshine Hospital -->
+<div class="popup" id="hospital5">
+    <div class="popup-content">
+        <div class="popup-left">
+            <h2>Sunshine Hospital</h2>
+            <p>Partnered Since: 2022</p>
+            <p>Success Rate: 87%</p>
+            <p>Total Donations: 1300+</p>
+            <p>Lives Saved: 1100+</p>
+            <p>Contact Hours: 8am - 8pm</p>
+            <button class="contact-btn" onclick="contactHospital()">Contact Hospital</button>
+        </div>
+        <div class="popup-right">
+            <img src="images/hospital5.jpg" alt="Sunshine Hospital">
+            <h3>Supporters</h3>
+            <div class="supporters">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 1">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 2">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 3">
+            </div>
+            <h3>Beneficiaries</h3>
+            <div class="beneficiaries">
+                <img src="../donor dashboard/images/2.jpg" alt="Beneficiary 1">
+                <img src="../donor dashboard/images/13.jpg" alt="Beneficiary 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup for Health First Clinic -->
+<div class="popup" id="hospital6">
+    <div class="popup-content">
+        <div class="popup-left">
+            <h2>Health First Clinic</h2>
+            <p>Partnered Since: 2021</p>
+            <p>Success Rate: 85%</p>
+            <p>Total Donations: 900+</p>
+            <p>Lives Saved: 800+</p>
+            <p>Contact Hours: 10am - 6pm</p>
+            <button class="contact-btn" onclick="contactHospital()">Contact Hospital</button>
+        </div>
+        <div class="popup-right">
+            <img src="images/hospital6.jpeg" alt="Health First Clinic">
+            <h3>Supporters</h3>
+            <div class="supporters">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 1">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 2">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 3">
+            </div>
+            <h3>Beneficiaries</h3>
+            <div class="beneficiaries">
+                <img src="../donor dashboard/images/2.jpg" alt="Beneficiary 1">
+                <img src="../donor dashboard/images/13.jpg" alt="Beneficiary 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup for Hope Care Hospital -->
+<div class="popup" id="hospital7">
+    <div class="popup-content">
+        <div class="popup-left">
+            <h2>Hope Care Hospital</h2>
+            <p>Partnered Since: 2023</p>
+            <p>Success Rate: 89%</p>
+            <p>Total Donations: 1000+</p>
+            <p>Lives Saved: 950+</p>
+            <p>Contact Hours: 8am - 8pm</p>
+            <button class="contact-btn" onclick="contactHospital()">Contact Hospital</button>
+        </div>
+        <div class="popup-right">
+            <img src="images/hospital7.jpeg" alt="Hope Care Hospital">
+            <h3>Supporters</h3>
+            <div class="supporters">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 1">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 2">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 3">
+            </div>
+            <h3>Beneficiaries</h3>
+            <div class="beneficiaries">
+                <img src="../donor dashboard/images/2.jpg" alt="Beneficiary 1">
+                <img src="../donor dashboard/images/13.jpg" alt="Beneficiary 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup for LifeCare Medical Center -->
+<div class="popup" id="hospital8">
+    <div class="popup-content">
+        <div class="popup-left">
+            <h2>LifeCare Medical Center</h2>
+            <p>Partnered Since: 2021</p>
+            <p>Success Rate: 93%</p>
+            <p>Total Donations: 1600+</p>
+            <p>Lives Saved: 1300+</p>
+            <p>Contact Hours: 24/7</p>
+            <button class="contact-btn" onclick="contactHospital()">Contact Hospital</button>
+        </div>
+        <div class="popup-right">
+            <img src="images/hospital8.jpeg" alt="LifeCare Medical Center">
+            <h3>Supporters</h3>
+            <div class="supporters">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 1">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 2">
+                <img src="../donor dashboard/images/1.jpg" alt="Supporter 3">
+            </div>
+            <h3>Beneficiaries</h3>
+            <div class="beneficiaries">
+                <img src="../donor dashboard/images/2.jpg" alt="Beneficiary 1">
+                <img src="../donor dashboard/images/13.jpg" alt="Beneficiary 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+        <h1>Upcoming Blood Donation Events</h1>
+
+        <div class="blood-donation-events">
+            <div class="event" onclick="showInterestForm('event1')">
+                <div class="event-left">
+                    <h2>Community Blood Drive</h2>
+                    <p>Date: 20th November 2024</p>
+                    <button class="show-interest-btn" onclick="showInterestForm('event1')">Show Interest</button>
+                </div>
+                <div class="event-right">
+                    <img src="images/camp1.jpeg" alt="Event 1">
+                </div>
+            </div>
+
+            <div class="event" onclick="showInterestForm('event2')">
+                <div class="event-left">
+                    <h2>University Campus Drive</h2>
+                    <p>Date: 22nd November 2024</p>
+                    <button class="show-interest-btn" onclick="showInterestForm('event2')">Show Interest</button>
+                </div>
+                <div class="event-right">
+                    <img src="images/camp2.jpeg" alt="Event 2">
+                </div>
+            </div>
+
+            <div class="event" onclick="showInterestForm('event3')">
+                <div class="event-left">
+                    <h2>City Hospital Blood Donation</h2>
+                    <p>Date: 24th November 2024</p>
+                    <button class="show-interest-btn" onclick="showInterestForm('event3')">Show Interest</button>
+                </div>
+                <div class="event-right">
+                    <img src="images/camp3.jpeg" alt="Event 3">
+                </div>
+            </div>
+
+            <div class="event" onclick="showInterestForm('event4')">
+                <div class="event-left">
+                    <h2>Regional Blood Donation Camp</h2>
+                    <p>Date: 28th November 2024</p>
+                    <button class="show-interest-btn" onclick="showInterestForm('event4')">Show Interest</button>
+                </div>
+                <div class="event-right">
+                    <img src="images/camp4.jpeg" alt="Event 4">
+                </div>
+            </div>
+
+            <div class="event" onclick="showInterestForm('event5')">
+                <div class="event-left">
+                    <h2>Emergency Blood Donation</h2>
+                    <p>Date: 30th November 2024</p>
+                    <button class="show-interest-btn" onclick="showInterestForm('event5')">Show Interest</button>
+                </div>
+                <div class="event-right">
+                    <img src="images/camp5.jpg" alt="Event 5">
+                </div>
+            </div>
+
+            <div class="event" onclick="showInterestForm('event5')">
+                <div class="event-left">
+                    <h2>Emergency Blood Donation</h2>
+                    <p>Date: 30th November 2024</p>
+                    <button class="show-interest-btn" onclick="showInterestForm('event5')">Show Interest</button>
+                </div>
+                <div class="event-right">
+                    <img src="images/camp6.jpeg" alt="Event 5">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popup-form" id="interestForm">
+        <div class="popup-form-content">
+            <h2>Show Interest</h2>
+            <form id="interestFormDetails" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+                
+                <label for="bloodGroup">Blood Group:</label>
+                <select id="bloodGroup" name="bloodGroup" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="subscribe">
+            <div class="subscribe-stay">
+                <h2 id="sn">JOIN OUR COMMUNITY</h2>
+                <div class="st">Stay Connected</div>
+            </div>
+            <div class="subscribe-input-f">
+                <div class="in-f">
+                    <input type="email" placeholder="Enter your email...">
+                </div>
+                <div>
+                    <button onclick="subscribe()">SUBSCRIBE NOW</button>
+                </div>
+            </div>
+            <div class="social">
+                <div class="fb"><i class="fab fa-facebook-f"></i></div>
+                <div class="fb"><i class="fab fa-instagram"></i></div>
+                <div class="fb"><i class="fab fa-twitter"></i></div>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-info">
+                <!-- <img src="/Main-logo2.png" alt="Logo" class="footer-logo"> -->
+                <p><span class="logo-text">Donor Link</span> <br>
+                    Donate blood and save lives. Join our platform to track donations, connect with donors, and support the cause.</p>
+            </div>
+            <div class="footer-explore">
+                <h3>Explore</h3>
+                <ul>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/">Home</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/blood-drives">Blood Drives</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/resources">Resources</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/contact">Contact Us</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/donate">Donate Now</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/find-donors">Find Donors</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/donor-stories">Donor Stories</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/volunteer">Volunteer</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/about-us">About Us</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/faq">FAQs</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <span class="icon"></span>
+                    <div class="contact-text">
+                        <p class="label">Address:</p>
+                        <p>Health Center, Main St.</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon"></span>
+                    <div class="contact-text">
+                        <p class="label">Phone:</p>
+                        <p>+123 456 7890</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon"></span>
+                    <div class="contact-text">
+                        <p class="label">Working Hours:</p>
+                        <p>Mon-Fri: 9am - 6pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-separator"></div>
+        <div class="footer-bottom">
+            <p>© All Rights Reserved - Donor Link App 2024</p>
+        </div>
+    </footer>
+
+
+    
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

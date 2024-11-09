@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Link</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+   <!-- Header Section -->
+<header id="home">
+    <div class="logo">
+        <h1>Donor <span class="black-letter">L</span>ink</h1>
+    </div>
+    <div class="nav-links">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="./donor dashboard/index.html">Find Donors</a></li>
+                <li><a href="./hospitals/index.html">Hospitals</a></li>
+                <li><a href="./connect/index.html">Lives Saved</a></li>
+                <li><a href="#" onclick="window.alert(' Profile Coming Soon!')">Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Content Section -->
+    <div class="container">
+        <div class="left-content">
+            <h2>"Save lives when it matters most. Find the right donors quickly to help patients in need."</h2>
+            <p>Connect with donors right now!</p>
+            <button class="connect-btn" onclick="window.location.href='./donor dashboard/index.html'">Connect</button>
+        </div>
+        <div class="right-content">
+            <img src="images/IMAGE.png" alt="Blood Donation Illustration">
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="what">
+
+        <div class="left">
+            <div class="r-1">
+                <div class="text-content">
+                    <h2 class="text">Register as a Donor</h2>
+                    <p class="sub-text">Users can sign up as donors by providing their blood type, health details, and
+                        locality. This information is securely stored in the database.</p>
+                </div>
+                <img src="images/register.svg" alt="Register Icon" class="icon"> <!-- Replace with your icon -->
+            </div>
+            <div class="r-2">
+                <div class="text-content">
+                    <h2 class="text">Receive Emergency Alerts</h2>
+                    <p class="sub-text">In emergencies, donors matching the required blood type in the area are notified
+                        instantly, ensuring a quick response to save lives.</p>
+                </div>
+                <img src="images/alert.svg" alt="Alert Icon" class="icon"> <!-- Replace with your icon -->
+            </div>
+            <div class="r-3">
+                <div class="text-content">
+                    <h2 class="text">Connect & Donate</h2>
+                    <p class="sub-text">Donors and recipients can easily communicate through the app to arrange
+                        donations, helping to provide life-saving blood efficiently.</p>
+                </div>
+                <img src="images/help.svg" alt="Donate Icon" class="icon"> <!-- Replace with your icon -->
+            </div>
+        </div>
+        <div class="right">
+            <h1>What We Do</h1>
+            <p>At Donor Link, we connect those who want to make a difference with causes that need their help...</p>
+            <button class="connect-btn-2" onclick="openForm()">Join Us</button>
+        </div>
+        
+        <!-- Modal Form -->
+        <div id="joinUsFormModal" class="modal">
+          <div class="modal-content">
+            <span class="close-button" onclick="closeForm()">&times;</span>
+            <h2>Become a Donor</h2>
+            <form id="donorForm" onsubmit="submitForm(event)">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+        
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+        
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required>
+        
+              <label for="address">Address:</label>
+              <input type="text" id="address" name="address" required>
+        
+              <label for="bloodGroup">Blood Group:</label>
+              <select id="bloodGroup" name="bloodGroup" required>
+                <option value="A+">A+</option>
+                <option value="B+">B+</option>
+                <option value="O+">O+</option>
+                <option value="AB+">AB+</option>
+              </select>
+        
+              <label for="healthConditions">Health Conditions:</label>
+              <input type="text" id="healthConditions" name="healthConditions">
+        
+              <label for="alcohol">Alcohol:</label>
+    <div class="radio-group">
+        <label for="alcoholYes">
+            <input type="radio" id="alcoholYes" name="alcohol" value="yes"> Yes
+        </label>
+        <label for="alcoholNo">
+            <input type="radio" id="alcoholNo" name="alcohol" value="no"> No
+        </label>
+    </div>
+
+    <label for="smoking">Smoking:</label>
+    <div class="radio-group">
+        <label for="smokingYes">
+            <input type="radio" id="smokingYes" name="smoking" value="yes"> Yes
+        </label>
+        <label for="smokingNo">
+            <input type="radio" id="smokingNo" name="smoking" value="no"> No
+        </label>
+    </div>
+        
+              <button type="submit" class="connect-btn-2">Send Request</button>
+            </form>
+          </div>
+        </div>        
+    </div>
+
+    <!-- How Section -->
+    <div class="how">
+
+        <div class="right-2">
+            <h1>How it works?</h1>
+            <div class="steps">
+                <p><span class="step-label">A</span> - <span class="step-title">Initiating a Search</span></p>
+                <p class="description">Hospitals, donors, or even users connected to you on Donor Link can initiate a
+                    search for blood donors by entering the required blood type and location.</p>
+
+                <p><span class="step-label">B</span> - <span class="step-title">Direct Messaging</span></p>
+                <p class="description">People in your network (like on social media) can message you directly when they
+                    need a donor or during an emergency, enhancing personal connections and faster communication.</p>
+
+                <p><span class="step-label">C</span> - <span class="step-title">Real-Time Notifications</span></p>
+                <p class="description">Once a search is initiated, all eligible donors nearby receive real-time alerts
+                    on their devices with information about the urgency and location of the request.</p>
+
+                <p><span class="step-label">D</span> - <span class="step-title">Donor Response</span></p>
+                <p class="description">Donors who receive the notification can respond by accepting the request, and the
+                    system updates their status, showing that they are available for donation.</p>
+            </div>
+        </div>
+
+        <div class="left-2">
+            <img src="images/bg4.webp">
+        </div>
+    </div>
+
+      <!-- Chatbot Button -->
+      <div id="chatbot">
+        <button id="chatbot-btn" onclick="openChatbot()">Chat with Us</button>
+    </div>
+
+    <!-- Chatbot Modal -->
+    <div id="chatbot-modal" class="chatbot-modal">
+        <div class="chatbot-content">
+            <span class="close-btn" onclick="closeChatbot()">×</span>
+            <div class="chatbot-header">
+                <h3>Donor Link Chatbot</h3>
+            </div>
+            <div class="chatbot-body">
+                <div id="chatbox" class="chatbox"></div>
+                <input type="text" id="user-input" placeholder="Ask a question..." />
+                <button id="send-btn" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="subscribe">
+            <div class="subscribe-stay">
+                <h2 id="sn">JOIN OUR COMMUNITY</h2>
+                <div class="st">Stay Connected</div>
+            </div>
+            <div class="subscribe-input-f">
+                <div class="in-f">
+                    <input type="email" placeholder="Enter your email...">
+                </div>
+                <div>
+                    <button onclick="subscribe()">SUBSCRIBE NOW</button>
+                </div>
+            </div>
+            <div class="social">
+                <div class="fb"><i class="fab fa-facebook-f"></i></div>
+                <div class="fb"><i class="fab fa-instagram"></i></div>
+                <div class="fb"><i class="fab fa-twitter"></i></div>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-info">
+                <!-- <img src="/Main-logo2.png" alt="Logo" class="footer-logo"> -->
+                <p><span class="logo-text">Donor Link</span> <br>
+                    Donate blood and save lives. Join our platform to track donations, connect with donors, and support the cause.</p>
+            </div>
+            <div class="footer-explore">
+                <h3>Explore</h3>
+                <ul>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/">Home</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/blood-drives">Blood Drives</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/resources">Resources</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/contact">Contact Us</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/donate">Donate Now</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/find-donors">Find Donors</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/donor-stories">Donor Stories</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/volunteer">Volunteer</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/about-us">About Us</a></li>
+                    <li><span class="icon-arrow">&#8599;</span><a href="/faq">FAQs</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <span class="icon"></span>
+                    <div class="contact-text">
+                        <p class="label">Address:</p>
+                        <p>Health Center, Main St.</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon"></span>
+                    <div class="contact-text">
+                        <p class="label">Phone:</p>
+                        <p>+123 456 7890</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon"></span>
+                    <div class="contact-text">
+                        <p class="label">Working Hours:</p>
+                        <p>Mon-Fri: 9am - 6pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-separator"></div>
+        <div class="footer-bottom">
+            <p>© All Rights Reserved - Donor Link App 2024</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
